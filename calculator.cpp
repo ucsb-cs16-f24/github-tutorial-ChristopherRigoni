@@ -31,6 +31,9 @@ int main() {
             break;
         case '/':
             result = num1 / num2;  // No check for dividing by 0
+            if(num2 ==0)
+                cerr<< "Error: cant do that" <<endl;
+                exit(1);
             cout << "Result: " << result << endl;
             break;
         default:
